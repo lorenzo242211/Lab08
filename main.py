@@ -3,6 +3,10 @@ import flet as ft
 from model.model import Model
 from UI.view import View
 from UI.controller import Controller
+import sys
+# Alza il limite di chiamate ricorsive a 10.000
+sys.setrecursionlimit(10000)
+
 
 
 def main(page: ft.Page):
